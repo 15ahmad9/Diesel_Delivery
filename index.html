@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diesel Delivery | توصيل الديزل</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<img src="assets/logo.png" class="logo">
+<button class="menu-toggle" aria-label="Menu">☰</button>
+<nav id="mainNav">
+<a href="#hero">الرئيسية</a>
+<a href="#about">من نحن</a>
+<a href="#why">خدماتنا</a>
+<a href="#order">تواصل معنا</a>
+</nav>
+<a class="phone" href="tel:+962700000000">📞 +962 7X XXX XXXX</a>
+</header>
+
+<section class="hero" id="hero">
+<div class="content">
+<span>توريد وقود موثوق</span>
+<h1>توصيل الديزل<br><b>بسرعة وأمان</b></h1>
+<p>نوفر لك الديزل في أي مكان داخل الأردن للمنازل والمصانع والمشاريع التجارية.</p>
+<button>تواصل عبر واتساب</button>
+<button class="outline">اتصل الآن</button>
+</div>
+</section>
+
+<section class="why-us" id="why">
+<div class="section-title">
+<span>لماذا نحن؟</span>
+<h2>خدمة ديزل احترافية تعتمد عليها</h2>
+<p>نقدم حلول توريد ديزل آمنة وسريعة للمنازل والمصانع والمنشآت التجارية في جميع مناطق الأردن.</p>
+</div>
+<div class="features">
+<div class="feature-card">
+<svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 9.5-8 10-4.5-.5-8-5-8-10V6l8-4z"/></svg>
+<h3>أمان عالي</h3><p>نلتزم بأعلى معايير السلامة أثناء التزويد.</p>
+</div>
+<div class="feature-card">
+<svg viewBox="0 0 24 24"><path d="M3 13h11V5H3v8zm11 0h4l3 3v3h-7v-6zM7 19a2 2 0 100-4 2 2 0 000 4zm10 0a2 2 0 100-4 2 2 0 000 4z"/></svg>
+<h3>توصيل سريع</h3><p>أسطول جاهز للوصول في الوقت المناسب.</p>
+</div>
+<div class="feature-card">
+<svg viewBox="0 0 24 24"><path d="M7 2h10v4H7V2zm-2 6h14l2 14H3L5 8z"/></svg>
+<h3>جودة مضمونة</h3><p>ديزل مطابق للمواصفات المطلوبة.</p>
+</div>
+<div class="feature-card">
+<svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7zm0 9a2 2 0 110-4 2 2 0 010 4z"/></svg>
+<h3>تغطية واسعة</h3><p>نوصل خدماتنا لمختلف محافظات الأردن.</p>
+</div>
+</div>
+</section>
+
+<section class="about" id="about">
+<img src="assets/depot.png">
+<div>
+<h2>شريكك الموثوق في توريد الديزل</h2>
+<p>نقدم خدمة توصيل ديزل احترافية مع الالتزام بالسرعة والدقة والسلامة في كل عملية تزويد.</p>
+<button>اعرف المزيد</button>
+</div>
+</section>
+
+<section class="order" id="order">
+<h2>اطلب الديزل الآن</h2>
+<p>وتصلك الخدمة بسرعة وأمان أينما كنت في الأردن</p>
+<button>تواصل واتساب</button>
+<button class="outline">اتصل الآن</button>
+</section>
+
+<footer>
+<img src="assets/logo.png">
+<p>Diesel Delivery © 2026 جميع الحقوق محفوظة</p>
+</footer>
+
+<script>
+const btn=document.querySelector(".menu-toggle");
+const nav=document.querySelector("#mainNav");
+btn.addEventListener("click",()=>{nav.classList.toggle("open");btn.classList.toggle("active");});
+nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("open")));
+</script>
+</body>
+</html>
